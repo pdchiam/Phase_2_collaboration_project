@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!-- Jadius: Updated to add comments throughout this document -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jadius: Meta tags are mandatory for mobile standards -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha256-t2/7smZfgrST4FS1DT0bs/KotCM74XlcqZN5Vu7xlrw=" crossorigin="anonymous" />
+    <!-- Jadius: CDN Normalized CSS to reset a majority of browser standards -->
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <!-- Jadius: CDN Bootstrap CSS for bootstrap styling -->
+
+    <link rel="stylesheet" href="css/mint-choc.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Jadius: Internal CSS for jQueryUI and customized styling -->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+    <title>PERSONALITY TEST | Are you a Lion, Otter, Beaver, or Golden Retriever?</title>
+    <meta name="description" content="This page hosts the questions and option groups for the LOGB Personality Type Quiz using javascript for interactivity">
+    <meta name="author" content="LOGB Quiz originally created by Gary Smalley and John Trent">
+</head>
+
+<body>
+
+    <div class="ui-widget container">
+
+        <!-- These are the questions for the quiz. The goal is for the user 
+        to be able to sort the answers from one to four. One being the Most
+        Like You and four being the Least Like You. -->
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">First Question:</h2>
+            <li class="ui-state-default btn btn-block">Likes Authority</li>
+            <li class="ui-state-default btn btn-block">Enthusiastic</li>
+            <li class="ui-state-default btn btn-block">Sensitive Feelings</li>
+            <li class="ui-state-default btn btn-block">Likes Instruction</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Second Question:</h2>
+            <li class="ui-state-default btn btn-block">Takes Charge</li>
+            <li class="ui-state-default btn btn-block">Takes Risks</li>
+            <li class="ui-state-default btn btn-block">Loyal</li>
+            <li class="ui-state-default btn btn-block">Accurate</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Third Question:</h2>
+            <li class="ui-state-default btn btn-block">Determined</li>
+            <li class="ui-state-default btn btn-block">Visionary</li>
+            <li class="ui-state-default btn btn-block">Calm</li>
+            <li class="ui-state-default btn btn-block">Consistant</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Fourth Question:</h2>
+            <li class="ui-state-default btn btn-block">Enterprising</li>
+            <li class="ui-state-default btn btn-block">Verbal</li>
+            <li class="ui-state-default btn btn-block">Enjoys Routine</li>
+            <li class="ui-state-default btn btn-block">Predictable</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Fifth Question:</h2>
+            <li class="ui-state-default btn btn-block">Competitive</li>
+            <li class="ui-state-default btn btn-block">Promoter</li>
+            <li class="ui-state-default btn btn-block">Dislike Change</li>
+            <li class="ui-state-default btn btn-block">Practical</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Sixth Question:</h2>
+            <li class="ui-state-default btn btn-block">Problem Solver</li>
+            <li class="ui-state-default btn btn-block">Enjoys Popularty</li>
+            <li class="ui-state-default btn btn-block">Gives in to Others</li>
+            <li class="ui-state-default btn btn-block">Factual</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Seventh Question:</h2>
+            <li class="ui-state-default btn btn-block">Poductive</li>
+            <li class="ui-state-default btn btn-block">Fun loving</li>
+            <li class="ui-state-default btn btn-block">Avoids Confrontation</li>
+            <li class="ui-state-default btn btn-block">Responsible</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Eighth Question:</h2>
+            <li class="ui-state-default btn btn-block">Bold</li>
+            <li class="ui-state-default btn btn-block">Likes Variety</li>
+            <li class="ui-state-default btn btn-block">Sensitive</li>
+            <li class="ui-state-default btn btn-block">Prefers Perfection</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Nineth Question:</h2>
+            <li class="ui-state-default btn btn-block">Decision Maker</li>
+            <li class="ui-state-default btn btn-block">Spontaneous</li>
+            <li class="ui-state-default btn btn-block">Nurturing</li>
+            <li class="ui-state-default btn btn-block">Detail Oriented</li>
+        </ol>
+        <ol class="ui-sortable list-group questions">
+            <h2 class="ui-widget-header text-center ui-corner-top">Tenth Question:</h2>
+            <li class="ui-state-default btn btn-block">Persistent</li>
+            <li class="ui-state-default btn btn-block">Inspirational</li>
+            <li class="ui-state-default btn btn-block">Peace Maker</li>
+            <li class="ui-state-default btn btn-block">Analytical</li>
+        </ol>
+    </div>
+    <div class="ui-widget container">
+    <input type="button" id="next" value="Continue" class="btn-success btn btn-block">
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Jadius: CDN which provides Bootstrap interactivity -->
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- Jadius: CDN Plugin to provide jQueryUI interactivity -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js" integrity="sha256-w8BXa9KXx+nmhO9N4hupvlLy+cAtqEarnB40DVJx2xA=" crossorigin="anonymous"></script>
+    <!-- Jadius: CDN Plugin to provide interactivity for charts and graphs -->
+
+    <script src="js/quizlogic.js"></script>
+    <!-- Jadius: Custom javascript for creating quiz -->
+
+</body>
+
+</html>
