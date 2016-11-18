@@ -23,105 +23,112 @@
         <div class="container">
             
         <nav class="navbar navbar-default">
-            
-            <div class="navbar-header">
-                
-                <a class="navbar-brand" href="#">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                      <span class="glyphicon glyphicon-home" aria-hidden="true">
-                      </span>
-                    </button>
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
-            </div> <!-- End navbar header -->
-                
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="container-fluid"></div>
                 <ul class="nav nav-pills nav-justified">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Form</a></li>
+                    <li class="active"><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="#"><b>Gallery</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
                 </ul>
-            </div> <!-- End navbar collapse -->
-            
         </nav>
             
             <div class="jumbotron">
+                <!--Image slider-->        
+            <div  class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+              </ol>
+  <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/beaver.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/lion.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/otter.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/golden_retriever.jpg">
+                </div>
+            </div><!--carousel-inner-->
+            <div class='textin'>
                 <h1>Find Your Personality</h1>
                 <h3>There are four animal traits, which one are you?</h3>
-                <button class="btn btn-info">More Info <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                <button class="btn btn-success">Take Quiz! <span class="glyphicon glyphicon-stats"></span></button>
-            </div>  <!-- End of jumbotron --> 
-            
-            <div class="panel panel-default">
-                
-                <div class="panel-heading">
-                    <p>My Panel <span class="label label-primary">New!</span></p>
-                </div> <!-- End of panel heading -->
-                
-                <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, veritatis, laborum, magni saepe maiores earum pariatur dolores deserunt perspiciatis velit culpa voluptatem soluta vero accusamus nam aliquam exercitationem quaerat ea!</p>
-                </div>  <!-- End of panel body -->
-                
-            </div>      <!-- End of panel -->
-            
-        </div>          <!-- End of container -->
+                <br>
+                <button class="btn btn-success btn-md">Take Quiz! <span class="glyphicon glyphicon-triangle-right"></span><span class="glyphicon glyphicon-triangle-right"></span><span class="glyphicon glyphicon-triangle-right"></span></button>
+            </div>
+            </div><!-- End of jumbotron --> 
+        </div><!-- End of container -->
 
         <div class="container">
-            
-            <div class="row">
-                
-                <div class="col-sm-6">
-                    <h2>The Lion</h2>
-                    <p><b>Their Environment:</b> lots of projects, awards on the wall, large calendar, office furniture arranged in a formal way<br />
-                    <b>They Gain Security by:</b> control<br />
-                    <b>Their Pace:</b> fast and decisive<br />
-                    <b>Their Needs:</b> a climate that responds<br />
-                    <b>They’re Irritated by:</b> wasted time, unpreparedness, arguing, blocking results<br />
-                    <b>For Growth They Need to:</b> appear less critical, respect people’s personal worth, develop tolerance for conflict, pace themselves<br />
-                    <b>Avoid With Them:</b> attacking his/her character, telling them what to do, presenting win-lose scenarios</p>
-                </div> <!-- End of First Column -->
-                
-                <div class="col-sm-6">
-                    <h2>The Otter</h2>
-                    <p><b>Their Environment:</b> cluttered, awards and slogans on the wall, personal pictures, friendly<br />
-                    <b>They Gain Security by:</b> flexibility<br />
-                    <b>Their Pace:</b> fast and spontaneous<br />
-                    <b>Their Needs:</b> a climate that collaborates<br />
-                    <b>They’re Irritated by:</b> too many facts, too much logic, boring tasks, same old approach, routine, being alone, ignoring their opinions<br />
-                    <b>For Growth They Need to:</b> respect priorities, more logical approach, follow through, get better organized, concentrate on the task at hand<br />
-                    <b>Avoid With Them:</b> negativism, rejection, arguing</p>
-                </div> <!-- End of Second Column -->
-                
+    
+            <div class="col-md-6 col-sm-6 col-xs-12" style="text-align:center">
+                <img src="images/golden_retriever1.jpg" alt="The Golden Retriever" data-toggle="modal" data-target="#myModal"/>
+                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">The Golden Retriever</h2>
+                </div>
+                <div class="modal-body">
+                <p><b>Their Environment:</b> family pictures, slogans on the wall, personal items, relaxed friendly decorations<br /><b>They Gain Security by:</b> close relationships<br /><b>Their Pace:</b> slow and easy<br /><b>Their Needs:</b> a climate that processes<br /><b>They’re Irritated by:</b> pushy and aggressive behavior, insincerity, being put on the spot, disrupting the status quo<br /><b>For Growth They Need to:</b> take risks, delegate to others, confront, develop confidence in others, learn to change and adapt<br /><b>Avoid With Them:</b> conflict, sudden unplanned risky changes, overloading, confusing</p>
+                </div>
+                </div>
+                </div>
             </div>
             
-            <div class="row">
-                
-                <div class="col-sm-6">
-                    <h2>The Beaver</h2>
-                    <p><b>Their Environment:</b> structured and organized, charts and graphs, functional decor, formal seating arrangement<br />
-                    <b>They Gain Security by:</b> preparation<br />
-                    <b>Their Pace:</b> slow and systematic<br />
-                    <b>Their Needs:</b> a climate that describes<br />
-                    <b>They’re Irritated by:</b> people who do not know what they are talking about, lack of attention to detail, surprises, unpredictability<br />
-                    <b>For Growth They Need to:</b> make faster decisions, tolerate conflict, learn to compromise, adjust to change and disorganization<br />
-                    <b>Avoid With Them:</b> criticizing, blunt personal questions, incomplete or inaccurate recommendations</p>
-                </div>      <!-- End of Third Column -->
-                
-                <div class="col-sm-6">
-                    <h2>The Golden Retriever</h2>
-                    <p><b>Their Environment:</b> family pictures, slogans on the wall, personal items, relaxed friendly decorations<br />
-                    <b>They Gain Security by:</b> close relationships<br />
-                    <b>Their Pace:</b> slow and easy<br />
-                    <b>Their Needs:</b> a climate that processes<br />
-                    <b>They’re Irritated by:</b> pushy and aggressive behavior, insincerity, being put on the spot, disrupting the status quo<br />
-                    <b>For Growth They Need to:</b> take risks, delegate to others, confront, develop confidence in others, learn to change and adapt<br />
-                    <b>Avoid With Them:</b> conflict, sudden unplanned risky changes, overloading, confusing</p>
-                </div>      <!-- End of Fourth Column -->
-                
-            </div>          <!-- End of Row -->
+            <div class="col-md-6 col-sm-6 col-xs-12" style="text-align:center">
+                <img src="images/beaver1.jpg" alt="The Beaver" data-toggle="modal" data-target="#myModal2"/>
+                <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title">The Beaver</h2>
+                </div>
+                <div class="modal-body">
+                <p><b>Their Environment:</b> structured and organized, charts and graphs, functional decor, formal seating arrangement<br /><b>They Gain Security by:</b> preparation<br /><b>Their Pace:</b> slow and systematic<br /><b>Their Needs:</b> a climate that describes<br /><b>They’re Irritated by:</b> people who do not know what they are talking about, lack of attention to detail, surprises, unpredictability<br /><b>For Growth They Need to:</b> make faster decisions, tolerate conflict, learn to compromise, adjust to change and disorganization<br /><b>Avoid With Them:</b> criticizing, blunt personal questions, incomplete or inaccurate recommendations</p>
+                </div>
+                </div>
+                </div>
+            </div>
             
-        </div>              <!-- End of Container -->
-
+            <div class="col-md-6 col-sm-6 col-xs-12" style="text-align:center">
+                <img src="images/otter1.jpg" alt="The Otter" data-toggle="modal" data-target="#myModal3"/>
+                <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h2 class="modal-title">The Otter</h2>
+                </div>
+                <div class="modal-body">
+                    <p><b>Their Environment:</b> cluttered, awards and slogans on the wall, personal pictures, friendly<br /><b>They Gain Security by:</b> flexibility<br /><b>Their Pace:</b> fast and spontaneous<br /><b>Their Needs:</b> a climate that collaborates<br /><b>They’re Irritated by:</b> too many facts, too much logic, boring tasks, same old approach, routine, being alone, ignoring their opinions<br /><b>For Growth They Need to:</b> respect priorities, more logical approach, follow through, get better organized, concentrate on the task at hand<br /><b>Avoid With Them:</b> negativism, rejection, arguing</p>
+                </div>
+                </div>
+                </div>    
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12" style="text-align:center">
+                <img src="images/lion1.jpg" alt="The Lion" data-toggle="modal" data-target="#myModal4"/>
+                <div class="modal fade" id="myModal4" role="dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h2 class="modal-title">The Lion</h2>
+                </div>
+                <div class="modal-body">
+                    <p><b>Their Environment:</b> lots of projects, awards on the wall, large calendar, office furniture arranged in a formal way<br /><b>They Gain Security by:</b> control<br /><b>Their Pace:</b> fast and decisive<br /><b>Their Needs:</b> a climate that responds<br /><b>They’re Irritated by:</b> wasted time, unpreparedness, arguing, blocking results<br /><b>For Growth They Need to:</b> appear less critical, respect people’s personal worth, develop tolerance for conflict, pace themselves<br /><b>Avoid With Them:</b> attacking his/her character, telling them what to do, presenting win-lose scenarios</p>
+                </div>
+                </div>
+                </div>
+            </div>
+            
+        </div><!-- End of Container -->
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
