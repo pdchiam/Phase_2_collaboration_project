@@ -64,12 +64,8 @@ form {
     color:black;
 }
 
-.myCarousel {
-   padding: 0;
-}
-
 .textin {
-    position: absolute;
+    position: fixed;
     top:20%;
 }
 
