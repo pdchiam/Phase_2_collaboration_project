@@ -33,3 +33,4 @@ $("#next").click( function() {   // Listening for a click on an element with id 
  * of each choice can be randomized so that the     *
  * first choice isn't always a specific animal.     *
  * *************************************************/
+ 
