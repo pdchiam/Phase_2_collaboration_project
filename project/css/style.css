@@ -28,44 +28,41 @@
     background-color: white;
     background-size: cover;
     background-position: center;
-    color: black;
+    color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-h1, h3 {
+h1, h4 {
     text-align: top;
-    color: black;
+    color: white;
     font-family: 'Alice', serif;
+    font-size: 35px;
 }
 
 .textin button {
     position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+    -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 10s infinite;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
     from {left: 0px;}
-    to {left: 200px;}
+    to {left: 250px;}
 }
 
 @keyframes mymove {
     from {left: 0px;}
-    to {left: 200px;}
+    to {left: 250px;}
 }
 
-.col1, .col2, .col3, .col4 {border: 2px solid black;}
+/*.col1, .col2, .col3, .col4 {border: 2px solid black;}*/
 
 form {
-    width: 50%;
-}
-
-.contact h2 {
-    margin-left: 60px;
+    width: 70%;
 }
 
 .contact {
-    margin-left: 280px;
+    margin-left: 8%;    
 }
 
 .nav > li > a {
@@ -90,13 +87,9 @@ form {
 }
 
 .textin {
-    position: static;
-    top:20%;
-    height: 200px;
-}
-
-.textin button {
-    margin-left: 10px;
+    position: absolute;
+    top: 40%;
+    left: 4%;
 }
 
 #myModal {
@@ -148,4 +141,26 @@ form {
 
 .col-md-6 img {
     padding-bottom: 45px;
+}
+
+.ui-widget > input {
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 568px) {
+    h1 {
+        font-size:60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        font-size:20px;
+    }
+}
+ 
+@media screen and (max-width: 568px) {
+    .lead {
+        font-size:0.8em;
+    }
 }
